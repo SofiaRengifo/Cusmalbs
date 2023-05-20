@@ -1,0 +1,805 @@
+body{
+  color: #676666;
+}
+/* SLIDER  */
+  @font-face {
+    font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url(../fonts/opensans/mem8YaGs126MiZpBA-UFWJ0bbck.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+    font-family: "Andor";
+    src: url("../fonts/AndorRegular-PersonalUse.otf")format('truetype');
+    src: url("../fonts/AndorRegular-PersonalUse.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "RussoOne";
+    src: url("../fonts/RussoOne-Regular.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  .logo a img{
+    content: url(../img/LOGO-CUSMALABS_white.png);
+  }
+
+ .my-9{
+  margin-top:50px;
+  margin-bottom:50px;
+ }
+
+ h5,h1{
+  font-family: 'RussoOne';
+}
+/*------------------ SLIDER------------------  */
+
+.swiper-button-next, .swiper-button-prev {
+  opacity: 0;
+  visibility: hidden;
+  z-index:12;
+  width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    color: red;
+    background-color: rgba(255,255,255,0.7);
+   
+}  
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 15px;
+  font-weight: bolder;
+}
+.mySwiper:hover .swiper-button-next,.mySwiper:hover .swiper-button-prev{
+  opacity: 1;
+  visibility: visible;
+  transition: 0.5s;
+}
+  .slider-height{
+    min-height:100vh
+  }
+  .caption{
+    background: url("../img/bottom.svg")  bottom no-repeat;
+  }
+ 
+
+.hero-overly::before{
+    position:absolute;content:"";background-color:rgba(50,4,4,0.5);width:100%;
+    height:100%;
+}
+.slider-area{
+  height:100%;
+  width:100%;
+  animation: slide-bg linear 7900ms infinite;
+  -webkit-animation: slide-bg linear 7900ms infinite;
+  background-repeat:no-repeat;background-position:center center;background-size:cover;
+}
+.hero__caption{
+  position: absolute;
+  top: 0;
+  text-align: center;
+  z-index: 12;
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+.hero__caption h1{
+  line-height: 1.5;
+   margin-top:35vh;  font-size: 36px;                     
+                            margin-bottom: 30px;
+                            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.85);
+    font-family: 'RussoOne';
+}
+
+.hero__caption span{
+        background-color: #F02E2F;
+        padding: 10px;
+        border-radius: 20px;
+        padding-inline: 15px;
+        text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+        display:inline-block;
+}
+
+@media (min-width: 768px)
+{
+  .hero__caption h1{
+   font-size: 60px;   
+   line-height: normal;                                 
+  }
+  .hero__caption span{
+    padding-inline: 40px;
+}
+}
+@media (min-width: 992px)
+{
+  .caption{background-size:101%}
+  .hero__caption h1{
+   margin-top:30vh;                                   
+  }
+}
+
+
+/* ----------CARACTERISTICAS ------------- */
+#caracteristicas .container{
+  overflow: visible!important;
+}
+.feature-element{
+  justify-content: center;
+  margin-top:2px;
+}
+.feature .icon i{
+  width: 65px;
+height: 65px;
+justify-content: center;
+align-items: center;
+background: #F02E2F;
+border-radius: 23px;
+color:white;
+display:flex;
+}
+.feature .icon{
+justify-content: center;
+display:flex;
+}
+.feature-text p{
+  margin-bottom:0px;
+}
+
+.feature-text{
+  margin-top:13px;
+  width: 113px;
+}
+.feature-text h5{
+  color:#FA9703;
+}
+
+
+@media (max-width: 991.98px)
+{
+  .feature-text{
+    text-align:center;
+  }
+  .feature-element{
+    display:grid;
+  }
+}
+@media (max-width: 575.98px)
+{
+  .feature-element{
+    margin-bottom:15px;
+  }
+  .my-9{
+    margin-top:30px;
+    margin-bottom:30px;
+   }
+}
+
+
+/* ----------------NOSOTROS -------------------- */
+.container{
+  overflow: hidden;
+}
+.img {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image:url(/assets/img/laboratorio.png);
+}
+.img-video{
+  width: 100%;
+}
+.icon-video {
+  width: 75px;
+  height: 75px;
+  background: #F02E2F;
+  -webkit-animation: pulseV 1800ms infinite;
+  animation: pulseV 1800ms infinite;
+  border-radius: 50%;
+  z-index:0;
+}
+.icon-video span {
+  font-size: 20px;
+  color: #fff;
+}
+
+.translate-middle {
+  transform: translate(-51%, -50%) !important;
+}
+
+.counter{
+  background-color:#808185;
+}
+
+.counter .text{
+ color:white;
+ text-align: center;
+}
+
+.counter .text strong{
+  font-size: 38px;
+}
+.counter .text span{
+  font-size: 30px;
+}
+.counter .text p{
+  color:#D9D9D9;
+  font-size: 14px;
+  font-family: 'RussoOne';
+ }
+.subheading{
+  color:#F02E2F;
+  font-weight:bolder;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+ .heading-section h2{
+  color:#6B6565;
+  font-weight:300;
+ }
+
+ @media (max-width: 991.98px){
+  .img-video {height: 400px;}
+}
+
+@media (min-width: 992px){
+  .icon-video { margin-right: -35px;}
+  .ps-lg-6 {padding-left: 4rem;}
+  .counter{margin-left: calc(-.5 * var(--bs-gutter-x));padding-left: calc(var(--bs-gutter-x) * 1);}
+}
+
+@media (min-width: 576px) and (max-width: 991.98px){
+  .margen{margin-inline:0;}
+}
+
+
+/* -------------SERVICIOS------------------  */
+
+.section-tittle video {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.service{
+  height:100%;
+}
+.section-tittle{
+  text-align: center;
+  padding-bottom: 6rem;padding-top: 6rem;
+}
+#servicios .section-tittle{
+  padding-bottom: 95px;padding-top: 7rem;
+}
+.section-tittle h4 {
+  font-family: 'RussoOne';
+  text-transform: uppercase;
+  color: #F02E2F;
+  display: inline-block;
+  position: relative;
+  padding-inline:10px;
+}
+.section-tittle h4::before {
+  position: absolute;
+  content: "";
+  width: 54px;
+  height: 2px;
+  background: #eb566c;
+  top: 0;
+  left: -54px;
+  top: 50%;
+  transform: translateY(-50%);
+  
+}
+.section-tittle h4::after {
+  position: absolute;
+  content: "";
+  width: 54px;
+  height: 2px;
+  background: #eb566c;
+  right: -54px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.service-row .p-1{
+  padding:1px!important;
+}
+.service-row .service {
+
+  background: url(https://www.labdiagnostica.com/wp-content/uploads/2021/05/que-son-los-analisis-clinicos-Blog-de-Laboratorios-Diagnostica-min.jpg) fixed ;
+  box-shadow: 0 0 30px  rgba(0, 0, 0, .08);
+
+}
+.service-item {
+  display: grid;
+  color:white;
+}
+.link{
+  background-color: #fff;color: #F02E2F;width:fit-content;border-radius: 50px;
+}
+.link span{
+  font-size: small;
+  font-weight:bold;
+  margin-right:5px;
+}
+.service:hover .service-item{ 
+  transition: 0.25s;
+  background:#F5F5F5!important;
+  color:#808185;
+}
+.service-row .service:hover {
+  background: #EB665F;
+}
+.service:hover .link{
+  background: #CFCFCF;
+}
+.service:hover  h5{ 
+  color:#F68E8F!important;
+}
+
+.service:hover .link i {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: hvr-wobble-horizontal 1s ease-in-out 1;
+  animation: hvr-wobble-horizontal 1s ease-in-out 1
+}
+.service .link i:before {
+  top: 1px;
+  position: relative;
+}
+@media (min-width: 768px) and (max-width: 1199.98px) { .col-lg-3 {width: 50%;}}
+
+
+/*----------CLIENTES ----------------*/
+.clientSwiper .swiper-slide img{
+  max-height: 50%;
+
+}
+.clientSwiper{
+  justify-content: center;
+  align-items: center;
+}
+.swiper-pagination-bullet {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+  width: 26px;
+  height: 26px;
+  border: 1px solid #F02E2F;
+  border-radius: 25px;
+  transition: .5s;
+  background: white;
+}
+
+.swiper-pagination-bullet-active {
+  border-color: #F02E2F;
+}
+
+.swiper-pagination-bullet::after {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  top: 4px;
+  left: 4px;
+  border-radius: 16px;
+  background: #F02E2F;
+  transition: .5s;
+}
+
+
+/* ------------FOOTER-----------------  */
+.footer {
+  overflow: hidden;
+  background: #E2E2E2;
+  font-size: 14px;
+  }
+  .ftco-section {
+    padding: 6em 0;
+    position: relative;
+}
+  .footer .logo {
+    /* font-size: 20px !important; */
+    font-weight: 600 !important;
+    line-height: 1;
+    }
+    .footer .logo a {
+      color: #676666; }
+      .footer .logo a span {
+        color: #F02E2F; }
+  .footer .ftco-footer-widget h2 {
+    font-weight: normal;
+    color: #676666;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    }
+  .footer .ftco-footer-widget ul li a {
+    color: rgb(105, 105, 108); }
+    .footer .ftco-footer-widget ul li a span {
+      color: #808185; }
+    .footer .ftco-footer-widget ul li a:hover {
+      color: #F02E2F; }
+      .footer .ftco-footer-widget ul li a:hover span {
+        color: #F02E2F; }
+  .footer .ftco-footer-widget .btn-primary {
+    background: #808185 !important;
+    border: 2px solid #808185 !important; }
+    .footer .ftco-footer-widget .btn-primary:hover {
+      background: #808185;
+      border: 2px solid #808185 !important; }
+  .footer p {
+    color: rgba(128, 129, 133, 0.7); }
+  .footer a {
+    color: rgba(128, 129, 133, 0.7); }
+    .footer a:hover {
+      color: #fff; }
+  .footer .block-23 h4 {
+    color: #F02E2F;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700; }
+    .block-23  li {
+      color: rgba(128, 129, 133, 0.9);
+  }
+  .block-23 i {
+    width: 30px;
+    padding-top: 2px;
+}
+.block-23 ul li, .block-23 ul li > a {
+  display: table;
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+.block-23  i, .block-23 .text {
+display: table-cell;
+}
+  .footer .opening-hours p span {
+    color: rgba(128, 129, 133, 0.9); }
+
+.ftco-footer-social li {
+  list-style: none;
+  margin: 0 10px 0 0;
+  display: inline-block; }
+  .ftco-footer-social li a {
+    height: 40px;
+    width: 40px;
+    display: block;
+    float: left;
+    background: rgba(240, 46, 47, 0.3);
+    border-radius: 50%;
+    position: relative; }
+    .ftco-footer-social li a i {
+      position: absolute;
+      font-size: 20px;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+    .ftco-footer-social li a:hover {
+      color: #fff; }
+
+.footer-small-nav > li {
+  display: inline-block; }
+  .footer-small-nav > li a {
+    margin: 0 10px 10px 0; }
+    .footer-small-nav > li a:hover, .footer-small-nav > li a:focus {
+      color: #d9ba2b; }
+
+      
+    @media (min-width: 768px){
+      .ml-md-5, .mx-md-5 {
+        margin-left: 3rem !important;
+    }
+    }
+/*--------------------------------------------------------------
+# nosotros
+--------------------------------------------------------------*/
+.bg-red{
+  background: #E03F3F;
+}
+.breadcrumbs {
+  padding: 150px 0 70px 0;
+  min-height: 30vh;
+  position: relative;
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  color:white;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.7);
+}
+.breadcrumbs h1{
+  font-size: calc(2rem + 1.8vw);
+}
+.breadcrumbs:before {
+  content: "";
+  background: linear-gradient(180deg, rgb(0 0 0 / 39%) 0%, rgb(163 30 31 / 41%) 100%, rgb(167 16 19 / 65%) 100%);
+  position: absolute;
+  inset: 0;
+}
+/* ------------palabras-----------------  */
+#palabras{
+  color:white;
+  margin-bottom:0;
+  font-size:14px;
+  text-align: justify;
+}
+.firma{
+  justify-content:right;
+  display:flex;
+}
+.firma img {
+  height:40px;
+}
+.firma p{
+  margin-bottom:0;
+}
+/* ------------Nosotros-----------------  */
+.nosotros img{
+width:75%;
+}
+.nosotros-img{
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nosotros{
+  background-image: url(../img/fondo2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 991.98px)
+{
+  .nosotros p{
+    text-align: justify;
+    }
+    .nosotros-img{
+      margin-top:15px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  .nosotros img{
+    width:50%;
+    }
+ }
+/* ------------Mision y Vision-----------------  */
+.m-item p{
+text-align: justify;
+font-size:14px;
+}
+
+.m-item {
+  background: #fff;
+  box-shadow: 0px 0 30px rgba(82, 86, 94, 0.05);
+  padding: 30px;
+}
+.m-item h4{
+  text-align:center;
+  font-weight:lighter;
+  font-family: 'RussoOne';
+}
+/* ------------Historia-----------------  */
+.historia{
+  background: #adb5bd;
+  color:white;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+border-radius: 40px 45px 0 0;
+}
+
+
+/* ------------Equipo-----------------  */
+
+.post-entry-1.person-1 {
+  text-align: center;
+}
+.post-entry-1.person-1 img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin: 0 auto -45px auto;
+  object-fit:cover;
+}
+.post-entry-1.person-1 .post-entry-1-contents {
+  padding-top: 4rem;
+}
+.post-entry-1 .post-entry-1-contents .meta {
+  margin-bottom: 15px;
+  color: #999;
+  font-size: 14px;
+}
+.post-entry-1 .post-entry-1-contents h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color:#FA9703;
+}
+
+/*--------------------------------------------------------------
+# ANALISIS CLINICOS
+--------------------------------------------------------------*/
+.info_items {
+  position: relative;
+}
+.info_items {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.info_items .item {
+  width: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+.info_items .item .img-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #FA9703;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #ffffff;
+  z-index: 1;
+  align-items: center;
+    display: flex;
+    justify-content: center;
+    -webkit-animation: icon-color ;
+    animation: icon-color ;
+    animation-duration: 0.5s;
+    animation-fill-mode:backwards;
+}
+@-webkit-keyframes icon-color {
+  0% {background-color: #fff;color:#FA9703} 
+  100% { background-color: #FA9703;color:#fff}
+}
+.info_items::before {
+  content: "";
+  position: absolute;
+  top: 26px;
+  width: 72%;
+  height: 8px;
+  background-color: #FA9703;
+  left: 130px;
+
+  -webkit-animation: line-run ;
+  animation: line-run ;
+  animation-duration: 4s;
+  
+  animation-timing-function:ease-in-out;
+  z-index: 0;
+}
+@-webkit-keyframes line-run {
+  0% {width: 0%; } 
+  50% { width: 36%; }
+  100% { width: 72%; }
+}
+
+.detail-box{
+  color: #676666;
+  font-size:small;
+}
+.detail-box h5{
+  font-size:14px;
+  color:#FA9703;
+}
+
+/*--------------------------------------------------------------
+# ANALISIS patologicos
+--------------------------------------------------------------*/
+.accordion-button p{
+  margin-bottom:0;
+  color:#FA9703;
+}
+.accordions div{
+  position: relative;
+
+}
+.accordion_container:not(:last-child) {
+    margin-bottom: 14px;
+}
+.accordion-button {
+  color: #DCA609;
+  width: 100%;
+  display: block;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding-right: 30px;
+  outline: none;
+  cursor: pointer;
+  padding-inline: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.accordion-button span {
+  color: #DCA609;
+  font-weight: 600;
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+.accordion-item{
+  background: #F5F5F5;
+  border-radius: 4px;
+  margin-top: 15px;
+  box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
+}
+.accordion{
+  height: 50px;
+    width: 100%;
+    background: #BCA44E;
+    padding-left: 24px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.collapsed .icon-close {
+  display: none;
+  
+}
+.collapsed .icon-show {
+  display: inline-block;
+  color: #181F32;
+}
+ .icon-show {
+  display: none;
+}
+.accordion-button i{
+  padding-top:5px;
+  color: #DCA609;
+}
+
+
+
+.collapsed p{
+  color: #676666;
+}
+.accordion_panel {
+    overflow: hidden;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+.accordions button{
+  border:0!important;
+}
+
+.investigacion{
+  font-size: small;
+  padding-inline:20px;
+  padding-top:15px;
+  border-top:solid 2px #FA9703;
+}
