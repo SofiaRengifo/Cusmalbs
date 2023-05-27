@@ -2,27 +2,24 @@ body{
   color: #676666;
 }
 /* SLIDER  */
-  @font-face {
-    font-family: 'Open Sans';
+@font-face {
+  font-family: "Audiowide";
+  src: url("../fonts/Audiowide-Regular.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Open Sans Regular"), local("OpenSans-Regular"), url(../fonts/opensans/mem8YaGs126MiZpBA-UFWJ0bbck.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 @font-face {
-    font-family: "Andor";
-    src: url("../fonts/AndorRegular-PersonalUse.otf")format('truetype');
-    src: url("../fonts/AndorRegular-PersonalUse.ttf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "RussoOne";
-    src: url("../fonts/RussoOne-Regular.ttf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: "MADE";
+  src: url("../fonts/MADE Soft Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MADE-LIGHT";
+  src: url("../fonts/MADE Soft Medium.otf") format("opentype");
+  font-weight: lighter;
+}
+
   .logo a img{
     content: url(../img/LOGO-CUSMALABS_white.png);
   }
@@ -33,7 +30,7 @@ body{
  }
 
  h5,h1{
-  font-family: 'RussoOne';
+  font-family: 'MADE';
 }
 /*------------------ SLIDER------------------  */
 
@@ -87,10 +84,10 @@ body{
 }
 .hero__caption h1{
   line-height: 1.5;
-   margin-top:35vh;  font-size: 36px;                     
+   margin-top:35vh;  font-size: 30px;                     
                             margin-bottom: 30px;
                             text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.85);
-    font-family: 'RussoOne';
+    font-family: "MADE",sans-serif;text-transform:uppercase;font-weight: bolder;
 }
 
 .hero__caption span{
@@ -102,10 +99,10 @@ body{
         display:inline-block;
 }
 
-@media (min-width: 768px)
+@media (min-width: 600px)
 {
   .hero__caption h1{
-   font-size: 60px;   
+   font-size: calc(1.8rem + 1.6vw);   
    line-height: normal;                                 
   }
   .hero__caption span{
@@ -181,6 +178,9 @@ display:flex;
 .container{
   overflow: hidden;
 }
+.header-nosotros h1{
+  padding-top: 180px;padding-bottom:180px;
+}
 .img {
   width: 100%;
   position: absolute;
@@ -229,7 +229,7 @@ display:flex;
 .counter .text p{
   color:#D9D9D9;
   font-size: 14px;
-  font-family: 'RussoOne';
+  font-family: 'MADE';
  }
 .subheading{
   color:#F02E2F;
@@ -241,7 +241,14 @@ display:flex;
   color:#6B6565;
   font-weight:300;
  }
-
+ @media (max-width: 991.98px) {
+  .header-nosotros h1{
+    padding-top: 180px;padding-bottom:90px;
+  }
+  .header-nosotros .palabras{
+    padding: 0px;
+  }
+ }
  @media (max-width: 991.98px){
   .img-video {height: 400px;}
 }
@@ -273,6 +280,7 @@ display:flex;
   height:100%;
 }
 .section-tittle{
+  overflow: hidden;
   text-align: center;
   padding-bottom: 6rem;padding-top: 6rem;
 }
@@ -280,7 +288,8 @@ display:flex;
   padding-bottom: 95px;padding-top: 7rem;
 }
 .section-tittle h4 {
-  font-family: 'RussoOne';
+  font-family: 'Audiowide';
+  font-weight:bold;
   text-transform: uppercase;
   color: #F02E2F;
   display: inline-block;
@@ -356,6 +365,7 @@ display:flex;
   position: relative;
 }
 @media (min-width: 768px) and (max-width: 1199.98px) { .col-lg-3 {width: 50%;}}
+@media (max-width: 541.98px) {.section-tittle .col-7 {width: 320px;}}
 
 
 /*----------CLIENTES ----------------*/
@@ -410,6 +420,7 @@ display:flex;
     /* font-size: 20px !important; */
     font-weight: 600 !important;
     line-height: 1;
+    font-family:"Audiowide"!important;
     }
     .footer .logo a {
       color: #676666; }
@@ -417,10 +428,11 @@ display:flex;
         color: #F02E2F; }
   .footer .ftco-footer-widget h2 {
     font-weight: normal;
-    color: #676666;
+    color: #818181;
     margin-bottom: 30px;
     font-size: 18px;
     font-weight: 500;
+    font-family:"MADE-LIGHT";
     }
   .footer .ftco-footer-widget ul li a {
     color: rgb(105, 105, 108); }
@@ -508,22 +520,25 @@ display: table-cell;
   background: #E03F3F;
 }
 .breadcrumbs {
-  padding: 150px 0 70px 0;
+  padding: 150px 0 80px 0;
   min-height: 30vh;
   position: relative;
   background-size: cover;
-  background-position: right;
+  background-position: center bottom 65%;
   background-repeat: no-repeat;
-  background-attachment:fixed;
   color:white;
-  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.7);
+  
 }
 .breadcrumbs h1{
-  font-size: calc(2rem + 1.8vw);
+  font-size: calc(1.4rem + 2vw);
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.53);
+  text-transform:uppercase;
+  
 }
 .breadcrumbs:before {
   content: "";
-  background: linear-gradient(180deg, rgb(0 0 0 / 39%) 0%, rgb(163 30 31 / 41%) 100%, rgb(167 16 19 / 65%) 100%);
+  background: linear-gradient(180deg, rgb(50 4 4 / 50%) 0%, rgb(215 215 215 / 40%) 100%);
+  /* background: linear-gradient(180deg, rgb(84 84 84 / 50%) 0%, rgb(215 215 215 / 40%) 100%); */
   position: absolute;
   inset: 0;
 }
@@ -556,10 +571,13 @@ width:75%;
 }
 
 .nosotros{
-  background: url("../img/fondo2.svg") no-repeat;
+  background-image: url(../img/fondo2.svg);
+  background-repeat: no-repeat;
   background-size: cover;
 }
-
+.align-header{
+  text-align:left;
+}
 @media (max-width: 991.98px)
 {
   .nosotros p{
@@ -567,6 +585,9 @@ width:75%;
     }
     .nosotros-img{
       margin-top:15px;
+    }
+    .align-header{
+      text-align:center;
     }
 }
 @media (min-width: 768px) and (max-width: 991.98px) { 
@@ -582,48 +603,19 @@ font-size:14px;
 
 .m-item {
   background: #fff;
-  box-shadow: 0px 0 30px rgba(82, 86, 94, 0.05);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
   padding: 30px;
 }
 .m-item h4{
   text-align:center;
-  font-weight:lighter;
-  font-family: 'RussoOne';
+  font-weight: bold;
+  font-family: 'Audiowide';
 }
 /* ------------Historia-----------------  */
 .historia{
   background: #adb5bd;
   color:white;
-  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
-border-radius: 40px 45px 0 0;
-}
-
-
-/* ------------Equipo-----------------  */
-
-.post-entry-1.person-1 {
-  text-align: center;
-}
-.post-entry-1.person-1 img {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  margin: 0 auto -45px auto;
-  object-fit:cover;
-}
-.post-entry-1.person-1 .post-entry-1-contents {
-  padding-top: 4rem;
-}
-.post-entry-1 .post-entry-1-contents .meta {
-  margin-bottom: 15px;
-  color: #999;
-  font-size: 14px;
-}
-.post-entry-1 .post-entry-1-contents h2 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 15px;
-  color:#FA9703;
+border-radius: 15px 15px 0 0;
 }
 
 /*--------------------------------------------------------------
@@ -660,10 +652,10 @@ border-radius: 40px 45px 0 0;
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  background-color: #FA9703;
+  background-color: #F02E2F;
   background-repeat: no-repeat;
   background-position: center;
-  color: #ffffff;
+  color: #fff;
   z-index: 1;
   align-items: center;
     display: flex;
@@ -674,18 +666,18 @@ border-radius: 40px 45px 0 0;
     animation-fill-mode:backwards;
 }
 @-webkit-keyframes icon-color {
-  0% {background-color: #fff;color:#FA9703} 
-  100% { background-color: #FA9703;color:#fff}
+  0% {background-color: #FA9703;} 
+  100% { background-color: #F02E2F;color:#fff}
 }
 .info_items::before {
   content: "";
   position: absolute;
   top: 26px;
-  width: 72%;
+  width: 70%;
   height: 8px;
-  background-color: #FA9703;
-  left: 130px;
-
+  background-color: #F02E2F;
+  left: 15%;
+  border-radius: 20px;
   -webkit-animation: line-run ;
   animation: line-run ;
   animation-duration: 4s;
@@ -705,8 +697,48 @@ border-radius: 40px 45px 0 0;
 }
 .detail-box h5{
   font-size:14px;
-  color:#FA9703;
+  color:#878076;
 }
+.imagen-servicio div{
+  border-radius: 30px;height: 85%;margin-left: 20px;margin-top: 30px;width: 80%;background-size: cover;background-position: center;
+}
+@media (max-width: 991.98px) { .info_items {
+  width: 100%;
+}   .info_items .item p{
+  display: none;
+}  .imagen-servicio img{
+  display:none;
+}
+}
+@media (max-width: 767.98px) { 
+  .imagen-servicio{
+    height:300px;
+  }
+  .imagen-servicio div{
+    margin-left: 0px;
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+  }
+
+  .info_items .item {
+    width: 25%;
+  }
+
+  .info_items {
+  width: 100%;
+  justify-content: space-around;
+} 
+
+.breadcrumbs {
+  padding: 200px 0 90px 0;
+  
+}
+}
+@media (min-width: 1400px) { .info_items::before {
+  width: 75%;
+  left: 13%;
+}}
 
 /*--------------------------------------------------------------
 # ANALISIS patologicos
@@ -727,7 +759,6 @@ border-radius: 40px 45px 0 0;
   width: 100%;
   display: block;
   position: relative;
-  font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -735,8 +766,8 @@ border-radius: 40px 45px 0 0;
   outline: none;
   cursor: pointer;
   padding-inline: 20px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
 .accordion-button span {
   color: #DCA609;
@@ -746,10 +777,15 @@ border-radius: 40px 45px 0 0;
 }
 
 .accordion-item{
-  background: #F5F5F5;
   border-radius: 4px;
   margin-top: 15px;
   box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
+}
+.histologia .accordion-item{
+  background: #fbfbfb;
+}
+.citologia .accordion-item{
+  background: #ffff;
 }
 .accordion{
   height: 50px;
@@ -765,18 +801,18 @@ border-radius: 40px 45px 0 0;
 
 .collapsed .icon-close {
   display: none;
-  
+
 }
 .collapsed .icon-show {
   display: inline-block;
-  color: #181F32;
+  color: #F02E2F;
 }
  .icon-show {
   display: none;
 }
 .accordion-button i{
   padding-top:5px;
-  color: #DCA609;
+  color: #FA9703;
 }
 
 
@@ -802,3 +838,24 @@ border-radius: 40px 45px 0 0;
   padding-top:15px;
   border-top:solid 2px #FA9703;
 }
+
+/*--------------------------------------------------------------
+# CONTACTO
+--------------------------------------------------------------*/
+
+.dbox .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 30%;
+  background: #F02E2F;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  color:white;
+}
+.contacto{
+  background-image:linear-gradient(90deg, rgba(50,4,4,0.5) 25%, rgba(50,4,4,0.5) 100%), url(/assets/img/analysis.jpg);background-size: cover;height: 100%;
+}
+@media (min-width: 768px) { .contacto{height: 100vh;} }
+@media (max-width: 767.98px) { .contacto img,.contacto iframe{
+  border-radius: 0px!important;
+}}

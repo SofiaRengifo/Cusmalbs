@@ -18,10 +18,9 @@
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="creame-whatsapp-me/css/joinchat.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/f2d5daf803.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -61,14 +60,14 @@
                                                 <li><a href="#">Servicios</a>
                                                     <ul class="submenu">
                                                         <li><a href="/servicios/analisis_clinicos.html">Análisis Clínicos</a></li>
-                                                        <li><a href="blog_details.html">Anatomía Patológica</a></li>
-                                                        <li><a href="elements.html">Estudios de Inmunohistoquímica</a>
+                                                        <li><a href="/servicios/anatomia_patologica.html">Anatomía Patológica</a></li>
+                                                        <li><a href="/servicios/Inmunohistoquimica.html">Estudios de Inmunohistoquímica</a>
                                                         </li>
-                                                        <li><a href="elements.html">Biologia Molecular</a></li>
+                                                        <li><a href="/servicios/molecular.html">Biologia Molecular</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="projects.html">Precios</a></li>
-                                                <li><a href="contact.html">Contacto</a></li>
+                                                <li><a href="projects.html">Cotizar Análisis</a></li>
+                                                <li><a href="contacto.html">Contacto</a></li>
                                                 <li class="d-lg-none"><a href="contact.html">Ver Resultados</a></li>
                                             </ul>
                                         </nav>
@@ -91,37 +90,48 @@
         <!-- navegacion End -->
     </header>
     <main>
-        <div class="breadcrumbs d-flex align-items-center"
-            style="background-image: url(assets/img/portada.png)">
-            <div class="container position-relative d-flex flex-column align-items-center"
-                >
-
-                <h1 class=" wow fadeInDownBig">Nosotros</h1>
-
-
-            </div>
-        </div>
-        <!-- palabras -->
-        <section class="bg-red wow fadeInDown" id="palabras">
-            <div class="container pt-5">
-                <p class="mb-0">«Nuestro Laboratorio, desea hacerte conocer que trabaja para seguir cumpliendo tus más
-                    altas expectativas, e incluso superarlas. Mi persona y todo nuestro equipo de trabajo, nos
-                    encontramos felices de brindarte nuestros servicios. Gracias por tu confianza y por elegirnos, eso
-                    nos ayuda hacer uno de los laboratorios más importantes de nuestra ciudad y región.»</p>
-                <div class="firma pb-2">
-                    <img src="assets/img/FIRMA.png" alt="">
-                    <div class="d-block " style="color: black;">
-                        <p><b>Directora Médica</b> </p>
-                        <p>Teresa Cusma Quintana</p>
+        <div class="breadcrumbs p-0 align-items-center"
+            style="background-image: url(assets/img/FACHADA.jpg);background-attachment: fixed;">
+            <div class="container">
+                <div class="row header-nosotros">
+                    <div class="col-lg-6 ">
+                        <div style="overflow: hidden;" class="position-relative d-flex flex-column align-header"
+                        >
+        
+                        <h1 class=" wow fadeInLeftBig" data-wow-duration="1.5s">Nosotros</h1>
+        
+        
                     </div>
-
+                    </div>
+                    <div class="col-lg-6 palabras">
+                        <div class="wow fadeInUpBig  h-100 d-flex align-items-center" data-wow-duration="1.5s" style="background-color: #f02e2eab;z-index: 2;position: relative;" id="palabras">
+                            <div class="p-5">
+                                <p class="mb-0">«Nuestro Laboratorio, desea hacerte conocer que trabaja para seguir cumpliendo tus más
+                                    altas expectativas, e incluso superarlas. Mi persona y todo nuestro equipo de trabajo, nos
+                                    encontramos felices de brindarte nuestros servicios. Gracias por tu confianza y por elegirnos, eso
+                                    nos ayuda hacer uno de los laboratorios más importantes de nuestra ciudad y región.»</p>
+                                <div class="firma">
+                                    <img src="assets/img/FIRMA.png" alt="">
+                                    <div class="d-block " style="color: black;">
+                                        <p><b>Directora Médica</b> </p>
+                                        <p>Teresa Cusma Quintana</p>
+                                    </div>
+                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+          
+         
+        </div>
+        <!-- palabras -->
+       
         <section class="nosotros">
             <div class="container">
                 <div class="row  my-9">
-                    <div class="col-lg-7 px-5 pt-4  wow fadeInLeftBig">
+                    <div class="col-lg-7 pe-lg-5 pt-4  wow fadeInLeftBig">
                         <h5 style="color: #808185;margin-bottom: 20px;">Somos un laboratorio con una amplia experiencia
                             en el campo de la Salud</h5>
                         <p>CusmaLabs, nace gracias al esfuerzo constante y la iniciativa empresarial de nuestra
@@ -152,88 +162,28 @@
        
         <!-- mision y vision -->
         <section id="mision" class="bg-light">
-            <div class="container">
-                <div class="row my-9" >
-                <div class="col-md-6 mb-1 wow zoomIn" data-wow-delay="0.1s">
-                    <div class="m-item h-100">
+            <div class="container" style="overflow:visible;">
+                <div class="row py-5" >
+                <div class="col-lg-6 mb-1 wow zoomIn" data-wow-delay="0.1s">
+                    <div class="m-item h-100 section-tittle">
                         <h4 style="color: #F02E2F;">MISION <i class="fa-solid fa-bullseye" style="color: #fa9703;"></i></h4>
                         <p>Somos un Laboratorio con un compromiso especial con cada uno de nuestros pacientes: Brindar resultados CONFIABLES, SEGUROS, OPORTUNOS Y CON CALIDAD HUMANA; pues estos contribuirán a que los mismos obtengan el tratamiento más certero, contribuyendo efectivamente a la salud de la comunidad en general mediante la prestación de servicios especializados en Laboratorio Clínico y Anatomía Patológica.</p>
                     </div>
                   </div>
-                  <div class="col-md-6 mb-1 wow zoomIn" data-wow-delay="0.5s">
-                    <div class="m-item h-100">
-                        <h4>VISION <i class="fa-solid fa-eye" style="color: #fa9703;"></i></h4>
+                  <div class="col-lg-6 mb-1 wow zoomIn" data-wow-delay="0.5s">
+                    <div class="m-item h-100 section-tittle" >
+                        <h4 style="color: #565657;">VISION <i class="fa-solid fa-eye" style="color: #fa9703;"></i></h4>
                         <p>Convertirnos en el mejor Laboratorio de nuestra ciudad de Trujillo y todo el Norte del Perú, siendo una entidad líder en el sector de la salud, manteniendo la confiabilidad de los resultados, el cumplimiento de los estándares establecidos de calidad, la efectividad en nuestros procesos y garantía en cada uno de nuestros servicios (Laboratorio Clínico, Anatomía Patológica, Citología e Inmunohistoquímica).</p>
                     </div>
                   </div>
             </div>
             </div>
         </section>
-        <!-- equipo -->
-        <section id="equipo">
-            <div class="site-section  section-tittle">
-                <div class="container-fluid">
-                    <div class="row justify-content-center ">
-                        <div class="col-12 col-md-7 ">
-                            <h4 class=" wow zoomIn" data-wow-duration="2s"><span style="color: #808185;">Nuestro</span>
-                                Equipo</h4>
-                            <p class="mt-2 mb-5">Contamos con el talento y compromiso de profesionales
-                                multidisciplinarios cuya capacidad, ética e integridad son pilares fundamentales de todo
-                                lo que hacemos.</p>
-                        </div>
-                    </div>
-                    <div class="row align-items-stretch">
-
-                        <div class="col-md-4 mb-5 mb-md-0">
-                            <div class="post-entry-1 h-100 person-1">
-
-                                <img src="https://cusmalabs.com/wp-content/uploads/2020/08/lab-expert-team-member-1.jpg"
-                                    alt="Image" class="img-fluid">
-
-                                <div class="post-entry-1-contents">
-                                    <span class="meta">Head of Laboratory Department</span>
-                                    <h2>Margaret Anderson</h2>
-                                 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4  mb-5 mb-md-0">
-                            <div class="post-entry-1 h-100 person-1">
-
-                                <img src="https://cusmalabs.com/wp-content/uploads/2020/08/lab-expert-team-member-2.jpg"
-                                    alt="Image" class="img-fluid">
-
-                                <div class="post-entry-1-contents">
-                                    <span class="meta">Senior Pathologist</span>
-                                    <h2>Mark Anthony</h2>
-                                   
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4  mb-0">
-                            <div class="post-entry-1 h-100 person-1">
-
-                                <img src="https://cusmalabs.com/wp-content/uploads/2020/08/lab-expert-team-member-3.jpg"
-                                    alt="Image" class="img-fluid">
-
-                                <div class="post-entry-1-contents">
-                                    <span class="meta">Laboratory Technician</span>
-                                    <h2>Samantha Wood</h2>
-                                   
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </section>
+   
 
     </main>
     <!-- Footer -->
-    <footer class="footer wow fadeInUp" data-wow-delay="0.1s">
+    <footer class="footer wow fadeInUp">
         <div class="container">
             <div class="row ftco-section ">
                 <div class="col-md-6 col-lg">
