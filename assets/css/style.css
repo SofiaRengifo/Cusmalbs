@@ -59,7 +59,7 @@ body{
     min-height:100vh
   }
   .caption{
-    background: url("../img/bottom.svg")  bottom no-repeat;
+    background: url("../img/bottom.svg")  bottom  left 20% no-repeat;
   }
  
 
@@ -410,7 +410,7 @@ display:flex;
 /* ------------FOOTER-----------------  */
 .footer {
   overflow: hidden;
-  background: #E2E2E2;
+  background: linear-gradient(to bottom, #4c4d51 20%, #613a3a);
   font-size: 14px;
   }
   .ftco-section {
@@ -422,23 +422,25 @@ display:flex;
     font-weight: 600 !important;
     line-height: 1;
     font-family:"Audiowide"!important;
+    color: white!important;
     }
+    .footer .logo span {
+      color: #f02e2f!important;
+      }
     .footer .logo a {
       color: #676666; }
       .footer .logo a span {
         color: #F02E2F; }
   .footer .ftco-footer-widget h2 {
     font-weight: normal;
-    color: rgb(103, 102, 102);
+    color: #f38b8b;
     margin-bottom: 30px;
     font-size: 18px;
     font-weight: 500;
     font-family:"MADE-LIGHT";
     }
-  .footer .ftco-footer-widget ul li a {
-    color: rgb(60 60 60); }
-    .footer .ftco-footer-widget ul li a span {
-      color: rgb(60 60 60); }
+    .footer p,.footer .ftco-footer-widget ul li a,.footer .ftco-footer-widget ul li a span, .footer .opening-hours p span {
+    color: white; }
     .footer .ftco-footer-widget ul li a:hover {
       color: #F02E2F; }
       .footer .ftco-footer-widget ul li a:hover span {
@@ -449,8 +451,7 @@ display:flex;
     .footer .ftco-footer-widget .btn-primary:hover {
       background: #808185;
       border: 2px solid #808185 !important; }
-  .footer p {
-    color: rgb(60 60 60); }
+
   .footer a {
     color: rgb(60 60 60); }
     .footer a:hover {
@@ -475,8 +476,7 @@ display:flex;
 .block-23  i, .block-23 .text {
 display: table-cell;
 }
-  .footer .opening-hours p span {
-    color: rgb(60 60 60); }
+
 
 .ftco-footer-social li {
   list-style: none;
@@ -487,7 +487,7 @@ display: table-cell;
     width: 40px;
     display: block;
     float: left;
-    background: rgba(240, 46, 47, 0.3);
+    background: rgb(255 122 122);
     border-radius: 50%;
     position: relative; }
     .ftco-footer-social li a i {
@@ -876,6 +876,11 @@ font-size:14px;
   padding-top:15px;
   border-top:solid 2px #F38B8B;
 }
+
+/* inmuno */
+@media (min-width: 992px) {.inmuno{
+height:50%!important;
+} }
 
 /*--------------------------------------------------------------
 # CONTACTO
